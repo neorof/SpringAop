@@ -8,7 +8,7 @@ public class AopMainClass {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                new String[] { "classpath:applicationContext.xmll" });
+                new String[] { "classpath:applicationContext.xml" });
         context.start();
         MyApoClass apoClass = context.getBean(MyApoClass.class);
         apoClass.method();
